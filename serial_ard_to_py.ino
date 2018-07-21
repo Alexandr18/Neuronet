@@ -1,5 +1,5 @@
 void setup() {
-  // put your setup code here, to run once:
+  
 Serial.begin(115200);
 //Serial.println("Initialization");
 pinMode(12,OUTPUT);
@@ -9,8 +9,7 @@ digitalWrite(12, LOW);
 }
 char state =0;
 void loop() {
-  // put your main code here, to run repeatedly:
-//Serial.println("hello");
+ 
 if (Serial.available()) {   
   state=Serial.read();
   Serial.print(state);
